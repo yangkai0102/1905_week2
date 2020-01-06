@@ -98,4 +98,18 @@ class TestController extends Controller
         }
         echo $stri;
     }
+
+    public function jiemi(){
+//        print_r($_GET);
+        $str=$_GET['str'];
+//        echo $str;
+        $len=strlen($str);
+        $stri='';
+        for($i=0;$i<$len;$i++){
+            $ord=ord($str[$i])-5;
+            $chr=chr($ord);
+            $stri.=$chr;
+        }
+        echo $stri;
+    }
 }
