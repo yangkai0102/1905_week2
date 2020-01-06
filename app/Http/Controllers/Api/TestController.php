@@ -86,11 +86,13 @@ class TestController extends Controller
 
 
     public function jiami(){
+        print_r($_GET);die;
         $str=$_GET['str'];
+        echo $str;
         $len=strlen($str);
         $str='';
         for($i=0;$i<$len;$i++){
-            $ord=ord($str[$i])+5;
+            $ord=ord($str[$i])+3;
             $chr=chr($ord);
             $str.=$chr;
         }
