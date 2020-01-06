@@ -83,4 +83,17 @@ class TestController extends Controller
         $res=UserModel::all();
         print_r($res->toArray());
     }
+
+
+    public function jiami(){
+        $str=$_GET['str'];
+        $len=strlen($str);
+        $str='';
+        for($i=0;$i<$len;$i++){
+            $ord=ord($str[$i])+5;
+            $chr=chr($ord);
+            $str.=$chr;
+        }
+        echo $str;
+    }
 }

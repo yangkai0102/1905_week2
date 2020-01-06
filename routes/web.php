@@ -29,5 +29,9 @@ Route::get('/test/asscii','TestController@asscii');
 Route::get('/test/dec','TestController@dec');
 
 
+Route::get('/week/jiami','Api\TestController@jiami');
+Route::get('/week/jiemi','Api\TestController@jiemi');
+
+
 
 
