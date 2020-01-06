@@ -96,6 +96,6 @@ class TestController extends Controller
             $chr=chr($ord);
             $stri.=$chr;
         }
-        echo $str;
+        echo $stri;
     }
 }
