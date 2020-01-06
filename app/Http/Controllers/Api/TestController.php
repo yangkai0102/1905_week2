@@ -92,7 +92,7 @@ class TestController extends Controller
         $len=strlen($str);
         $stri='';
         for($i=0;$i<$len;$i++){
-            $ord=ord($str[$i])+5;
+            $ord=ord($str[$i])+3;
             $chr=chr($ord);
             $stri.=$chr;
         }
@@ -106,7 +106,7 @@ class TestController extends Controller
         $len=strlen($str);
         $stri='';
         for($i=0;$i<$len;$i++){
-            $ord=ord($str[$i])-5;
+            $ord=ord($str[$i])-3;
             $chr=chr($ord);
             $stri.=$chr;
         }
